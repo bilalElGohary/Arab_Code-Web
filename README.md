@@ -1,8 +1,32 @@
-# Arab_Code-Web
-small web for tranning.(HTML + CSS + JS).
+# Arab Code Web
 
-## New Repo Structure (Recommended)
-Basharab-code-web/
+A clean and simple training website built with **HTML, CSS, and JavaScript**.
+
+![Demo](https://via.placeholder.com/800x400?text=Arab+Code+Web+Preview)
+
+## About The Project
+
+**Arab_Code-Web** is a small front-end training website designed to practice by using HTML, CSS, and vanilla JavaScript.
+
+### Features
+
+- Fully Responsive Design
+- Clean and Modern UI
+- Multi-page website (Home, About, Projects, Contact)
+- Smooth navigation & interactions
+- RTL support ready (Arabic friendly)
+- No frameworks — pure vanilla code
+
+## Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript**
+
+## Project Structure
+
+```bash
+arab-code-web/
 ├── index.html
 ├── about.html
 ├── projects.html
@@ -15,6 +39,6 @@ Basharab-code-web/
 │   │   └── contact.css
 │   └── js/
 │       └── main.js
-├── assets/img/          # (keep your images here)
+├── assets/img/
 ├── README.md
 └── LICENSE
