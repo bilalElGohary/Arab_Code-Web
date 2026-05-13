@@ -29,15 +29,12 @@ arab-code-web/
 ├── about.html
 ├── projects.html
 ├── contact.html
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── about.css
-│   │   ├── projects.css
-│   │   └── contact.css
-│   └── js/
-│       └── main.js
-├── assets/img/
+├── style.css
+├── about.css
+├── projects.css
+├── contact.css
+├── main.js
+├── assets/img/...
 ├── README.md
 └── LICENSE
 ```
