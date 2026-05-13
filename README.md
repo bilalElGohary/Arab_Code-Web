@@ -2,8 +2,6 @@
 
 A clean and simple training website built with **HTML, CSS, and JavaScript**.
 
-![Demo](https://via.placeholder.com/800x400?text=Arab+Code+Web+Preview)
-
 ## About The Project
 
 **Arab_Code-Web** is a small front-end training website designed to practice by using HTML, CSS, and vanilla JavaScript.
@@ -42,3 +40,8 @@ arab-code-web/
 ├── assets/img/
 ├── README.md
 └── LICENSE
+```
+
+### License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
