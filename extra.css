@@ -1,0 +1,114 @@
+/* From Uiverse.io by chase2k25 */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle, #00ff00 1px, transparent 1px),
+        radial-gradient(circle, #00ff00 1px, transparent 1px) 10px 10px,
+        linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: #000;
+}
+
+/* Scanline effect */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(0, 255, 0, 0.05) 50%,
+            transparent 100%);
+    background-size: 100% 4px;
+    animation: scanline-move 2s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glitch effect */
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 255, 0, 0.2),
+            transparent);
+    opacity: 0;
+    animation: glitch-effect 3s infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Animation for scanlines */
+@keyframes scanline-move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 4px;
+    }
+}
+
+/* Animation for glitch sweeps */
+@keyframes glitch-effect {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translateX(100%) skewX(5deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* btn*/
+.cards button {
+    --bg-color: #030303;
+    --sec-color: #00ff00;
+    --font-color: #F1EFEC;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 25px;
+    background: var(--bg-color);
+}
+.cards button a {
+    color: var(--sec-color);
+    text-shadow: 0 0 15px var(--sec-color);
+}
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--sec-color);
+    border-radius: 25px;
+    padding: 0.65em 1.5em;
+    background: var(--bg-color);
+    color: var(--sec-color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.cards button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+
+.cards button:active .button_top {
+    transform: translateY(0);
+}

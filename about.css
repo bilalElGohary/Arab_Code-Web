@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #030303;
+    --sec-color: #00ff00;
+    --font-color: #F1EFEC;
+}
+
+.QaA h1 {
+    text-shadow: 0 0 15px var(--sec-color);
+    color: var(--sec-color);
+    font-size: xx-large;
+}
+.QaA p{
+    text-shadow: 0 0 15px var(--font-color);
+    color: var(--font-color);
+    font-size: x-large;
+}
+
+.card-p{
+    width: 260px;
+    padding: 25px 15px;
+    margin: 35px;
+    border: 3px solid var(--sec-color);
+    border-radius: 25px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    filter: drop-shadow(0 5px 15px var(--sec-color));
+    transition: all 1s;
+}
+
+.card-p:hover {
+    transform: scale(1.1);
+}
+
+.card-p .content{
+    display: block;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    margin: 20px;
+    text-shadow: 0 0 15px var(--sec-color);
+}
+
+.card-p .title-p{
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: var(--sec-color);
+    text-shadow: 0 0 15px var(--sec-color);
+}
+
+.card-p .price{
+    font-size: 65px;
+    font-weight: bolder;
+    text-shadow: 0 0 15px var(--sec-color);
+}
+
+.content .description {
+    color: var(--sec-color);
+    margin-top: 10px;
+    font-size: 15px;
+    text-shadow: 0 0 15px var(--sec-color);
+}
+
+.card-p .button {
+    background-color: var(--sec-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    width: 90%;
+}
+
+.card-p button a {
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 1rem;
+    text-shadow: 0 0 15px var(--sec-color);
+}
+
+section .price-container {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex: content;
+    flex-wrap: wrap;
+}
+
+section h1{
+    text-shadow: 0 0 15px var(--sec-color);
+    color: var(--sec-color);
+    font-size: 45px;
+}
